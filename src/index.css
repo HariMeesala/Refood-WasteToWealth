@@ -1,0 +1,429 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: "Carme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(253, 254, 253);
+}
+
+button {
+  font-family: "Carme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  margin: 0;
+}
+
+.logo {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logo-image {
+  background-image: url('https://www.sintef.no/contentassets/c2171e2ee2ba450ca89f6b5a52c2d319/logo-refood.png?width=1080&mode=crop&scale=both&quality=80');
+  height: 60px;
+  width: 80px;
+  background-position: center;
+  background-size: cover;
+}
+
+h4 {
+  font-weight: 900;
+}
+
+nav {
+  width: 30%;
+  height: 45px;
+}
+
+nav ul {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  width: 33.33%;
+  height: 100%;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+span {
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(40deg, #fff, #04AA6D);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .5s;
+}
+
+nav ul li:nth-child(1):hover~span {
+  left: 0;
+}
+
+li:hover {
+  color: #fff;
+}
+
+nav ul li:nth-child(2):hover~span {
+  left: 33.33%;
+}
+
+nav ul li:nth-child(3):hover~span {
+  left: 66.66%;
+}
+
+.register-login {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register-btn {
+  background-color: #fff;
+  color: #000;
+  font-weight: 900;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.login-btn {
+  height: 100%;
+  background-color: #04AA6D;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.heading {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: 900;
+  color: #000;
+  text-shadow: 2px 2px 4px #04AA6D;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.image-container {
+  height: 450px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.same {
+  width: 600px;
+  height: 200px;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.food-wastage {
+  background-image: url('https://media.licdn.com/dms/image/D4D12AQH8U6poLRO5NQ/article-cover_image-shrink_720_1280/0/1685281514596?e=2147483647&v=beta&t=U_ciTz2oct-Q-dmA7bIU-p0LSfY9Kbx3Pva-17tDaOY');
+}
+
+.industries {
+  background-image: url('https://www.ldxsolutions.com/wp-content/uploads/2023/02/LDX-Solutions-Has-Extensive-Biomass.jpg');
+}
+
+.restaurants {
+  background-image: url('https://media.istockphoto.com/id/1079901206/photo/3d-render-of-luxury-restaurant-interior.jpg?s=612x612&w=0&k=20&c=kKj5Uw0ZpuWKX8ZX6eXuKGc1sP86fMjIbZJFbWl9-ZM=');
+}
+
+.vermicomposts {
+  background-image: url('https://mipatex.in/cdn/shop/articles/vermicompost_345x345@2x.jpg?v=1630390358');
+}
+
+.farmer-reg {
+  height: 100vh;
+  width: 100%;
+  background-color: #f7f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+form {
+  width: 500px;
+  height: 600px;
+  background-color: #c8dbeb;
+  opacity: 0.9;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signup {
+  font-weight: bold
+}
+
+.details {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+label {
+  width: 40%;
+  height: 40px;
+}
+
+input {
+  width: 60%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #000;
+  color: #000;
+  border-radius: 8px;
+  padding-left: 15px;
+  background-color: #fff;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.check-box {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.check-box input {
+  width: 20px;
+  height: 20px;
+}
+
+.check-box label {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: left;
+  width: 90%;
+}
+
+.farmer-reg button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  background-color: rgb(45, 45, 117);
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.farmer-reg button:hover {
+  border: 2px solid rgb(45, 45, 117);
+  color: #000;
+  background-color: #fff;
+}
+
+.login-form {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form {
+  height: 400px;
+  background-color: #04AA6D;
+}
+
+.btn-group {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-form-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-form-btn:hover {
+  background-color: #d6d3d3;
+  border: 2px solid #000;
+  color: #000;
+}
+
+
+.dropbtn {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Carme", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dropdown {
+  width: 48%;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 42px;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 250px;
+  height: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.register-btn {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+}
+
+.hello {
+  width: 98%;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+.farmer-reg {
+  /* background-image: url("https://img.freepik.com/free-photo/farmer-working-outdoors-harvesting-wheat-sunset-generated-by-ai_188544-21578.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .9;
+}
+
+.login-form {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .9;
+}
